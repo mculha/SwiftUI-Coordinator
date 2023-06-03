@@ -7,15 +7,22 @@
 
 import SwiftUI
 
+enum TabType: Hashable {
+    case home
+    case profile
+    case news
+}
+
 struct ContentView: View {
+    
+    @State var selection: TabType = .home
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView(selection: $selection) {
+            HomeCoordinator()
+                .tabItem { Text("Home") }
+                .tag(TabType.home)
         }
-        .padding()
     }
 }
 
