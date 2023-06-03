@@ -14,7 +14,7 @@ struct PurchaseView: View {
         VStack(spacing: 10) {
             Text(viewModel.value)
             
-            NavigationLink("Navigate Purchase", value: HomeRoute.purchase(value: "Purchase \(Int.random(in: 0...1000))"))
+            NavigationLink("Navigate Purchase", value: HomeRouter.Screen.purchase(value: "Purchase \(Int.random(in: 0...1000))"))
 
             Button("Pop", action: viewModel.pop)
             

@@ -10,9 +10,9 @@ import SwiftUI
 
 class HomeViewModel: ObservableObject {
     
-    @Binding var path: [HomeRoute]
+    @Binding var path: [HomeRouter.Screen]
     
-    init(path: Binding<[HomeRoute]>) {
+    init(path: Binding<[HomeRouter.Screen]>) {
         _path = path
     }
     

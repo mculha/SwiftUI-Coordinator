@@ -10,20 +10,24 @@ import SwiftUI
 
 struct HomeCoordinator: View {
     
-    @StateObject var flowState: HomeFlowState = .init()
+    @StateObject var router: HomeRouter = .init()
     
     var body: some View {
-        NavigationStack(path: $flowState.path) {
-            HomeView(viewModel: .init(path: $flowState.path))
-                .navigationDestination(for: HomeRoute.self, destination: navigation(route:))
+        NavigationStack(path: $router.path) {
+            HomeView(viewModel: .init(path: $router.path))
+                .navigationDestination(for: HomeRouter.Screen.self, destination: navigation(route:))
+                .sheet(item: $router.sheetItem, content: navigation(route:))
+                .fullScreenCover(item: $router.fullScreenItem, content: navigation(route:))
         }
     }
     
-    @ViewBuilder func navigation(route: HomeRoute) -> some View {
+    @ViewBuilder private func navigation(route: HomeRouter.Screen) -> some View {
         switch route {
         case .purchase(value: let value):
-            PurchaseView(viewModel: .init(value: value, path: $flowState.path))
+            PurchaseView(viewModel: .init(value: value, path: $router.path))
         }
     }
+    
+
 }
 

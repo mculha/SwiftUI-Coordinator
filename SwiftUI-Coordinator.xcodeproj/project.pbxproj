@@ -13,7 +13,7 @@
 		E9F8BBA52A2B919F0028FFB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F8BBA42A2B919F0028FFB4 /* Preview Assets.xcassets */; };
 		E9F8BBAD2A2B961B0028FFB4 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8BBAC2A2B961B0028FFB4 /* HomeCoordinator.swift */; };
 		E9F8BBB02A2B99940028FFB4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8BBAF2A2B99940028FFB4 /* HomeView.swift */; };
-		E9F8BBB32A2B9A860028FFB4 /* HomeFlowState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8BBB22A2B9A860028FFB4 /* HomeFlowState.swift */; };
+		E9F8BBB32A2B9A860028FFB4 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8BBB22A2B9A860028FFB4 /* HomeRouter.swift */; };
 		E9F8BBB62A2B9C320028FFB4 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8BBB52A2B9C320028FFB4 /* HomeViewModel.swift */; };
 		E9F8BBB92A2BA57D0028FFB4 /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8BBB82A2BA57D0028FFB4 /* PurchaseView.swift */; };
 		E9F8BBBB2A2BA5850028FFB4 /* PurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8BBBA2A2BA5850028FFB4 /* PurchaseViewModel.swift */; };
@@ -27,7 +27,7 @@
 		E9F8BBA42A2B919F0028FFB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9F8BBAC2A2B961B0028FFB4 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		E9F8BBAF2A2B99940028FFB4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		E9F8BBB22A2B9A860028FFB4 /* HomeFlowState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlowState.swift; sourceTree = "<group>"; };
+		E9F8BBB22A2B9A860028FFB4 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		E9F8BBB52A2B9C320028FFB4 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E9F8BBB82A2BA57D0028FFB4 /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
 		E9F8BBBA2A2BA5850028FFB4 /* PurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewModel.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				E9F8BBAC2A2B961B0028FFB4 /* HomeCoordinator.swift */,
-				E9F8BBB22A2B9A860028FFB4 /* HomeFlowState.swift */,
+				E9F8BBB22A2B9A860028FFB4 /* HomeRouter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 				E9F8BBA02A2B919D0028FFB4 /* ContentView.swift in Sources */,
 				E9F8BBB62A2B9C320028FFB4 /* HomeViewModel.swift in Sources */,
 				E9F8BBB02A2B99940028FFB4 /* HomeView.swift in Sources */,
-				E9F8BBB32A2B9A860028FFB4 /* HomeFlowState.swift in Sources */,
+				E9F8BBB32A2B9A860028FFB4 /* HomeRouter.swift in Sources */,
 				E9F8BB9E2A2B919D0028FFB4 /* SwiftUI_CoordinatorApp.swift in Sources */,
 				E9F8BBAD2A2B961B0028FFB4 /* HomeCoordinator.swift in Sources */,
 			);

@@ -11,9 +11,9 @@ import SwiftUI
 final class PurchaseViewModel: ObservableObject {
     
     let value: String
-    @Binding var path: [HomeRoute]
+    @Binding var path: [HomeRouter.Screen]
     
-    init(value: String, path: Binding<[HomeRoute]>) {
+    init(value: String, path: Binding<[HomeRouter.Screen]>) {
         self.value = value
         _path = path
     }
