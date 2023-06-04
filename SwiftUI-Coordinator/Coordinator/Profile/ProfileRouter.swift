@@ -38,6 +38,6 @@ extension ProfileRouter {
             return .init()
         }
         
-        case contact
+        case contact(value: String)
     }
 }

@@ -24,6 +24,8 @@
 		E9F8BBC82A2CF3A50028FFB4 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8BBC72A2CF3A50028FFB4 /* ProfileCoordinator.swift */; };
 		E9F8BBCA2A2CF3AE0028FFB4 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8BBC92A2CF3AE0028FFB4 /* ProfileRouter.swift */; };
 		E9F8BBCC2A2CF4EC0028FFB4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8BBCB2A2CF4EC0028FFB4 /* Router.swift */; };
+		E9F8BBCF2A2CFDF80028FFB4 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8BBCE2A2CFDF80028FFB4 /* ContactView.swift */; };
+		E9F8BBD12A2CFDFF0028FFB4 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8BBD02A2CFDFF0028FFB4 /* ContactViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		E9F8BBC72A2CF3A50028FFB4 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		E9F8BBC92A2CF3AE0028FFB4 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
 		E9F8BBCB2A2CF4EC0028FFB4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		E9F8BBCE2A2CFDF80028FFB4 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		E9F8BBD02A2CFDFF0028FFB4 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		E9F8BBAE2A2B99830028FFB4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E9F8BBCD2A2CFDED0028FFB4 /* Contact */,
 				E9F8BBC12A2CAE180028FFB4 /* Profile */,
 				E9F8BBBC2A2CA72D0028FFB4 /* Login */,
 				E9F8BBB72A2BA5740028FFB4 /* Purchase */,
@@ -168,6 +173,15 @@
 				E9F8BBC92A2CF3AE0028FFB4 /* ProfileRouter.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		E9F8BBCD2A2CFDED0028FFB4 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				E9F8BBCE2A2CFDF80028FFB4 /* ContactView.swift */,
+				E9F8BBD02A2CFDFF0028FFB4 /* ContactViewModel.swift */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +257,8 @@
 				E9F8BBB92A2BA57D0028FFB4 /* PurchaseView.swift in Sources */,
 				E9F8BBBB2A2BA5850028FFB4 /* PurchaseViewModel.swift in Sources */,
 				E9F8BBA02A2B919D0028FFB4 /* ContentView.swift in Sources */,
+				E9F8BBCF2A2CFDF80028FFB4 /* ContactView.swift in Sources */,
+				E9F8BBD12A2CFDFF0028FFB4 /* ContactViewModel.swift in Sources */,
 				E9F8BBBE2A2CA81B0028FFB4 /* LoginView.swift in Sources */,
 				E9F8BBB62A2B9C320028FFB4 /* HomeViewModel.swift in Sources */,
 				E9F8BBB02A2B99940028FFB4 /* HomeView.swift in Sources */,

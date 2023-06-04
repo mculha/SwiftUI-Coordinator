@@ -12,7 +12,14 @@ struct ProfileView: View {
     @EnvironmentObject var router: ProfileRouter
     
     var body: some View {
-        Text(viewModel.value)
+        
+        VStack(spacing: 10) {
+            Text(viewModel.value)
+            
+            NavigationLink("Contact", value: ProfileRouter.Screen.contact(value: "Contact"))
+        }
+        
+        
     }
 }
 
