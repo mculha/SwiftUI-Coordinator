@@ -1,5 +1,5 @@
 //
-//  ProfileRouter.swift
+//  NewsRouter.swift
 //  SwiftUI-Coordinator
 //
 //  Created by Melih Çulha on 4.06.2023.
@@ -7,8 +7,8 @@
 
 import Foundation
 
-final class ProfileRouter: ObservableObject, Router {
-    typealias T = ProfileRouter.Screen
+final class NewsRouter: ObservableObject, Router {
+    typealias T = NewsRouter.Screen
 
     @Published var path: [T] = .init()
     @Published var sheetItem: T?
@@ -24,20 +24,23 @@ final class ProfileRouter: ObservableObject, Router {
     }
     
     func pop() {
-        self.path.removeLast()
+        path.removeLast()
     }
     
     func returnRoot() {
-        self.path.removeAll()
+        path = .init()
     }
+    
 }
 
-extension ProfileRouter {
+
+extension NewsRouter {
     enum Screen: Hashable, Identifiable {
         var id: UUID {
             return .init()
         }
         
-        case contact(value: String)
+        case notification
+        
     }
 }

@@ -20,12 +20,22 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $selection) {
             HomeCoordinator()
-                .tabItem { Text("Home") }
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
                 .tag(TabType.home)
             
             ProfileCoordinator()
-                .tabItem { Text("Profile") }
+                .tabItem {
+                    Label("Profile", systemImage: "person.crop.circle")
+                }
                 .tag(TabType.profile)
+            
+            NewsCoordinator()
+                .tabItem {
+                    Label("News", systemImage: "newspaper.fill")
+                }
+                .tag(TabType.news)
         }
     }
 }
