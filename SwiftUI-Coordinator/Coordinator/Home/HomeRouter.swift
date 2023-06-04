@@ -16,6 +16,10 @@ protocol Router {
     var fullScreenItem: T? { get set }
     
     func route(_ type: RouteType<HomeRouter.Screen>)
+    
+    func pop()
+    
+    func returnRoot()
 }
 
 enum RouteType<T> {
@@ -32,6 +36,7 @@ extension HomeRouter {
         }
         
         case purchase(value: String)
+        case login(value: String)
     }
 }
 
@@ -49,5 +54,13 @@ final class HomeRouter: ObservableObject, Router {
         case .cover(screen: let screen):
             self.fullScreenItem = screen
         }
+    }
+    
+    func pop() {
+        self.path.removeLast()
+    }
+    
+    func returnRoot() {
+        self.path = .init()
     }
 }

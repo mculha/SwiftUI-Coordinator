@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PurchaseView: View {
     @StateObject var viewModel: PurchaseViewModel
+    @EnvironmentObject var router: HomeRouter
     
     var body: some View {
         VStack(spacing: 10) {
@@ -16,9 +17,9 @@ struct PurchaseView: View {
             
             NavigationLink("Navigate Purchase", value: HomeRouter.Screen.purchase(value: "Purchase \(Int.random(in: 0...1000))"))
 
-            Button("Pop", action: viewModel.pop)
+            Button("Pop", action: router.pop)
             
-            Button("Return Root", action: viewModel.returnRoot)
+            Button("Return Root", action: router.returnRoot)
             
         }
     }
@@ -28,6 +29,7 @@ struct PurchaseView: View {
 
 struct PurchaseView_Previews: PreviewProvider {
     static var previews: some View {
-        PurchaseView(viewModel: .init(value: "Purchase - 0", path: .constant(.init())))
+        PurchaseView(viewModel: .init(value: "Purchase - 0"))
+            .environmentObject(HomeRouter())
     }
 }

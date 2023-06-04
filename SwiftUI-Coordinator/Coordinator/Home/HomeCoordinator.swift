@@ -15,6 +15,7 @@ struct HomeCoordinator: View {
     var body: some View {
         NavigationStack(path: $router.path) {
             HomeView(viewModel: .init(path: $router.path))
+                .environmentObject(router)
                 .navigationDestination(for: HomeRouter.Screen.self, destination: navigation(route:))
                 .sheet(item: $router.sheetItem, content: navigation(route:))
                 .fullScreenCover(item: $router.fullScreenItem, content: navigation(route:))
@@ -24,7 +25,10 @@ struct HomeCoordinator: View {
     @ViewBuilder private func navigation(route: HomeRouter.Screen) -> some View {
         switch route {
         case .purchase(value: let value):
-            PurchaseView(viewModel: .init(value: value, path: $router.path))
+            PurchaseView(viewModel: .init(value: value))
+                .environmentObject(router)
+        case .login(value: let value):
+            LoginView(viewModel: .init(value: value))
         }
     }
     
