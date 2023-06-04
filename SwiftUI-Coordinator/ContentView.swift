@@ -22,6 +22,10 @@ struct ContentView: View {
             HomeCoordinator()
                 .tabItem { Text("Home") }
                 .tag(TabType.home)
+            
+            ProfileCoordinator()
+                .tabItem { Text("Profile") }
+                .tag(TabType.profile)
         }
     }
 }

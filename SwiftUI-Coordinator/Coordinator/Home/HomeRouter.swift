@@ -6,27 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
-
-protocol Router {
-    associatedtype T
-    
-    var path: [T] { get set }
-    var sheetItem: T? { get set }
-    var fullScreenItem: T? { get set }
-    
-    func route(_ type: RouteType<HomeRouter.Screen>)
-    
-    func pop()
-    
-    func returnRoot()
-}
-
-enum RouteType<T> {
-//    case push(_ screen: T) // It is not necessary to use because using Navigation Link directly
-    case sheet(_ screen: T)
-    case cover(_ screen: T)
-}
 
 extension HomeRouter {
     

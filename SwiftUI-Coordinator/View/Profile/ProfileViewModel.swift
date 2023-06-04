@@ -1,14 +1,13 @@
 //
-//  PurchaseViewModel.swift
+//  ProfileViewModel.swift
 //  SwiftUI-Coordinator
 //
-//  Created by Melih Çulha on 3.06.2023.
+//  Created by Melih Çulha on 4.06.2023.
 //
 
 import Foundation
-import SwiftUI
 
-final class PurchaseViewModel: ObservableObject {
+final class ProfileViewModel: ObservableObject {
     
     let value: String
     
@@ -16,4 +15,5 @@ final class PurchaseViewModel: ObservableObject {
     init(value: String) {
         self.value = value
     }
+    
 }

@@ -8,12 +8,6 @@
 import Foundation
 import SwiftUI
 
-class HomeViewModel: ObservableObject {
-    
-    @Binding var path: [HomeRouter.Screen]
-    
-    init(path: Binding<[HomeRouter.Screen]>) {
-        _path = path
-    }
+final class HomeViewModel: ObservableObject {
     
 }
