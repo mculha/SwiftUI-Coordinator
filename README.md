@@ -1,7 +1,7 @@
 # SwiftUI-Coordinator
 
 The piece of code helps us to navigate a view to others. It also helps us to pass data to other views easily.
-Each navigation needs its own Coordinator. Each navigation also has its own NavigationStack and Router to manage navigation.
+Each navigation needs its own Coordinator. Each navigation also has its own NavigationStack and Router to manage navigation. It is designed for SwiftUI.
 
 - To push a view in NavigationStack, NavigationLink should be called.
 - To pop the last view in NavigationStack, router.pop() should be called.
