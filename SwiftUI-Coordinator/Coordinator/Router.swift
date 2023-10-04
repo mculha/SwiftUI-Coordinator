@@ -22,7 +22,7 @@ protocol Router {
 
 
 enum RouteType<T> {
-//    case push(_ screen: T) // It is not necessary to use because using Navigation Link directly
+    case push(_ screen: T)
     case sheet(_ screen: T)
     case cover(_ screen: T)
 }

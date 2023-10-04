@@ -16,10 +16,10 @@ struct ProfileView: View {
         VStack(spacing: 10) {
             Text(viewModel.value)
             
-            NavigationLink("Contact", value: ProfileRouter.Screen.contact(value: "Contact"))
+            Button("Contact") {
+                router.route(.push(.contact(value: "Contact")))
+            }
         }
-        
-        
     }
 }
 

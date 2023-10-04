@@ -20,6 +20,8 @@ final class ProfileRouter: ObservableObject, Router {
             self.sheetItem = screen
         case .cover(screen: let screen):
             self.fullScreenItem = screen
+        case .push(screen: let screen):
+            self.path.append(screen)
         }
     }
     

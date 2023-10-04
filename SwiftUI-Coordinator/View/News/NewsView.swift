@@ -13,8 +13,10 @@ struct NewsView: View {
     @EnvironmentObject var router: NewsRouter
     
     var body: some View {
-        VStack(spacing: 10) {
-            NavigationLink("Notifications", value: NewsRouter.Screen.notification)
+        VStack(spacing: 10) {            
+            Button("Notifications") {
+                router.route(.push(.notification))
+            }
             
             Button("Notification Modally") {
                 router.route(.sheet(.notification))
